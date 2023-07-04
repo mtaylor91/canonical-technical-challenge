@@ -44,7 +44,9 @@ fi
 
 # Prepare initramfs
 cp init.sh $INITRAMFS_DIR/init
-mkdir -p $INITRAMFS_DIR/{dev,proc,sys}
+mkdir -p $INITRAMFS_DIR/dev
+mkdir -p $INITRAMFS_DIR/proc
+mkdir -p $INITRAMFS_DIR/sys
 sudo mknod -m 666 $INITRAMFS_DIR/dev/console c 5 1
 sudo mknod -m 666 $INITRAMFS_DIR/dev/tty c 5 0
 sudo mknod -m 666 $INITRAMFS_DIR/dev/tty0 c 4 0
