@@ -1,6 +1,8 @@
 Canonical Technical Take Home Exercise - Solutions
 ==================================================
 
+To install dependencies on Ubuntu 22.04, please first run `ubuntu-dependencies.sh`.
+
 # Exercise 1: Bootable Linux image via QEMU
 
 The boot-image subdirectory contains a shell script (run.sh) that creates and runs a
